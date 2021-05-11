@@ -1,0 +1,24 @@
+.footer {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: hsl(0, 0%, 44%);
+    padding: 2rem;
+    background: black;
+    gap: 1rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  .footer_contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_socials {
+    svg {
+      padding-right: 1rem;
+    }
+  }
+}

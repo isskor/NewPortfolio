@@ -1,0 +1,53 @@
+nav {
+  position: fixed;
+  top: 1.5rem;
+  left: 5rem;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+}
+
+nav > span {
+  width: 40px;
+  margin: 0.5rem;
+  height: 3px;
+  display: block;
+  background: #55736c;
+}
+
+.topnav {
+  display: flex;
+  position: fixed;
+  right: 5rem;
+  top: 1rem;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+li {
+  color: #62bb96;
+  border-bottom: 1px solid #55736c;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.sidenav {
+  position: fixed;
+  right: 3rem;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  list-style: none;
+  z-index: 100;
+}
+
+.sidenav li {
+  transform: rotate(90deg);
+  opacity: 0.6;
+}
+
+.sidenav .active {
+  border-bottom: 3px solid #55736c;
+  padding-bottom: 0.75rem;
+}

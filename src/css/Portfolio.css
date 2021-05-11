@@ -1,0 +1,230 @@
+.portfolio {
+  padding: 5rem;
+}
+.portfolio > h1 {
+  text-align: center;
+  font-size: 100px;
+}
+.portfolio .bg_title {
+  text-align: center;
+  display: block;
+  font-size: 200px;
+  letter-spacing: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  background: -webkit-linear-gradient(270deg, #10313c 10%, #091a20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.portfolio .section_title {
+  margin-top: -120px;
+  background: -webkit-linear-gradient(230deg, black, #525252, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem 10rem;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid #55736c;
+}
+.portfolio-card .row {
+  display: flex;
+  flex: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.portfolio-card .header .index {
+  font-size: 60px;
+  background: -webkit-linear-gradient(270deg, #154151 10%, #0d2730);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+.portfolio-card h1 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(270deg, #2b82a1 10%, #0d2730);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.portfolio-card .line {
+  width: 1rem;
+  height: 2px;
+  background: white;
+  align-self: center;
+  margin-top: 12px;
+}
+.portfolio-card h3 {
+  align-self: center;
+  color: #b6b6b6;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.portfolio-card img {
+  height: 300px;
+  width: 100%;
+}
+.portfolio-card:hover {
+  height: 500px;
+}
+
+/* .portfolio-card h1 {
+      /* flex: 0.3; */
+.portfolio-card .info {
+  justify-content: space-between;
+}
+.portfolio-card .info p {
+  color: #b6b6b6;
+  font-weight: 700;
+}
+.portfolio-card .info .btn-ctn {
+  display: flex;
+  gap: 1rem;
+}
+.portfolio-card .info button {
+  border: none;
+  padding: 1em 2em;
+  outline: none;
+  background: transparent;
+  color: #2b82a1;
+}
+
+/* .project {
+      margin-top: 5rem;
+    } */
+.project-ctn {
+  display: flex;
+  padding: 5rem 5rem;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.project-ctn .tools {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #55736c;
+  height: 700px;
+}
+
+.project-ctn .tools h3 {
+  text-align: center;
+  color: #55736c;
+}
+
+.project-tool-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project-tool-list li {
+  border: none;
+  color: white;
+  padding: 1rem 0;
+  align-self: flex-start;
+}
+
+.project-tool-list .btn-ctn {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-tool-list button {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1em 2em;
+  border-radius: 0.25rem;
+  background: #74ac9f;
+}
+
+.project-tool-list button:last-child {
+  background: #74ac84;
+}
+
+.project-ctn .tools {
+  flex: 0.15;
+}
+
+.project-ctn .project {
+  flex: 0.7;
+}
+
+.project-ctn .header {
+  display: flex;
+}
+
+.project-ctn .header h3 {
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+
+.project-ctn .img-grid {
+  height: calc(700px - 48px - 5rem - 1rem);
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 80%; */
+  margin: 0 auto;
+  padding: 5rem 5rem 1rem;
+  gap: 1rem;
+  border-bottom: 1px solid #55736c;
+}
+
+.img-grid > img {
+  flex: 100%;
+  height: 400px;
+  background: gray;
+  width: 100%;
+}
+
+.imgs {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  flex: 100%;
+}
+
+.imgs > img {
+  height: 100px;
+  width: 120px;
+  background: gray;
+}
+
+.project-ctn p {
+  color: white;
+  padding: 0 1rem;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+}
+
+.more button {
+  display: flex;
+  padding: 1em 2em;
+  background-color: transparent;
+  border: none;
+  flex-direction: column;
+  align-items: center;
+  color: green;
+}

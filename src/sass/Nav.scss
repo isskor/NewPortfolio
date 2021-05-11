@@ -1,0 +1,140 @@
+nav {
+  position: fixed;
+  top: 1.5rem;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.expandNav {
+  cursor: pointer;
+}
+.expandNav > span {
+  width: 40px;
+  margin: 0.5rem;
+  height: 2px;
+  display: block;
+  background: #55736c;
+  margin-left: 2rem;
+}
+
+.topnav {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    list-style-type: none;
+    .links {
+      display: flex;
+      // gap: 5rem;
+      li {
+        transition: all 0.6s ease;
+        padding: 0 1rem;
+        color: hsl(0, 0%, 70%);
+        &:hover {
+          // align-items: flex-start;
+          transform: translateY(-10px);
+          color: hsl(196, 58%, 50%);
+          a {
+            color: hsl(196, 58%, 50%);
+          }
+        }
+        a {
+          padding: 1rem;
+          text-decoration: none;
+          color: hsl(0, 0%, 70%);
+        }
+      }
+    }
+    li {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+    }
+    svg:hover {
+      color: hsl(196, 58%, 50%);
+    }
+  }
+}
+
+.nav li {
+  cursor: pointer;
+  color: hsl(0, 0%, 70%);
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.sidenav {
+  position: fixed;
+  right: 0.5rem;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  list-style: none;
+  z-index: 100;
+  li {
+    border-bottom: 1px solid hsl(196, 58%, 40%);
+    transform: rotate(90deg);
+    transition: all 0.6s ease;
+    opacity: 0.6;
+    text-align: center;
+    color: hsl(0, 0%, 70%);
+    cursor: pointer;
+  }
+  .active {
+    border-bottom: 3px solid hsl(196, 58%, 40%);
+    padding-bottom: 0.75rem;
+    color: hsl(196, 58%, 50%);
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.expand_nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  max-width: 200px;
+  background: hsl(196, 58%, 15%);
+  box-shadow: 10px 0 20px rgb(0, 0, 0, 20%);
+  height: 100vh;
+  top: 0;
+  .close {
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    text-align: end;
+    cursor: pointer;
+    span {
+      position: absolute;
+      width: 2px;
+      height: 35px;
+      background: gray;
+      // border-radius: 50%;
+      background: #55736c;
+    }
+    & span:first-child {
+      transform: rotate(45deg);
+      z-index: 999;
+    }
+    & span:last-child {
+      transform: rotate(135deg);
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      a {
+        display: inline-block;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: #c0d2d8;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
