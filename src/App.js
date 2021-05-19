@@ -12,6 +12,7 @@ import { Route } from 'react-router-dom';
 import Contact from './Contact';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
+import Table from './Table';
 
 function App() {
   const homeRef = useRef(null);
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route path='/contact'>
           <Contact />
+        </Route>
+        <Route path='/table'>
+          <Table />
         </Route>
         <TopNav
           contactRef={contactRef}

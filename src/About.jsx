@@ -1,7 +1,7 @@
 import React from 'react';
 import Skills from './Skills';
 import gsap from 'gsap';
-
+import pic from './assets/images/Untitled-1.jpg';
 import { useIntersection } from 'react-use';
 function About({ aboutRef, contactRef }) {
   const intersection = useIntersection(aboutRef, {
@@ -44,15 +44,15 @@ function About({ aboutRef, contactRef }) {
         <span className='bg_title'>ABOUT</span>
         <h1 className='section_title fade'>About Me</h1>
         <div className='imgCtn fade'>
-          <img src='' alt='' />
+          <img src={pic} alt='' />
         </div>
         <div className='about fade'>
           <h2>Hello, I'm Jerry Phuong</h2>
           <h3>A Front-End Developer</h3>
           <p>
-            Driven by my passion for technology and ecstatic designs, my
+            Driven by my passion for technology and web applications, my
             objective is to create awesome websites and apps. I’m looking for an
-            challange to innovate myself and make new great experiences with
+            challenge to innovate myself and make new great experiences with
             people.{' '}
           </p>
 

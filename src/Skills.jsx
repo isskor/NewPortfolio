@@ -11,6 +11,7 @@ import styledcomponents from './assets/images/styledcomponents.svg';
 import github from './assets/images/github.svg';
 import sqlite from './assets/images/sqlite.svg';
 import mongodb from './assets/images/mongodb.svg';
+import nextjs from './assets/images/nextjs.svg';
 
 function Skills() {
   const skills = [
@@ -29,6 +30,10 @@ function Skills() {
     {
       name: 'HTML5',
       image: html5,
+    },
+    {
+      name: 'NextJS',
+      image: nextjs,
     },
     {
       name: 'NodeJS',

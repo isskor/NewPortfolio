@@ -29,7 +29,7 @@
     background: -webkit-linear-gradient(
       230deg,
       hsl(0, 0%, 0%),
-      hsl(0, 0%, 32%),
+      hsl(0, 0%, 42%),
       hsl(0, 0%, 0%)
     );
     -webkit-background-clip: text;
@@ -96,13 +96,7 @@
 
   h1 {
     font-size: 40px;
-    background: -webkit-linear-gradient(
-      270deg,
-      hsl(196, 58%, 40%) 10%,
-      hsl(195, 58%, 12%)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: hsl(196, 58%, 35%);
   }
 
   h3 {
